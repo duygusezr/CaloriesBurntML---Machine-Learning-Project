@@ -41,7 +41,7 @@ features = df.select_dtypes(include='float').columns
 plt.subplots(figsize=(15, 10))
 for i, col in enumerate(features):
     plt.subplot((len(features) // 3) + 1, 3, i + 1)  # Dinamik grid ayarlaması
-    sb.histplot(df[col], kde=True)  # distplot yerine histplot kullandık
+    sb.histplot(df[col], kde=True) 
 plt.tight_layout()
 plt.show()
 
