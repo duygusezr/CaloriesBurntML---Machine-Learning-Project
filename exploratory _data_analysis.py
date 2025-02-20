@@ -36,8 +36,6 @@ plt.show()
 
 features = df.select_dtypes(include='float').columns
 
-features = df.select_dtypes(include='float').columns
-
 plt.subplots(figsize=(15, 10))
 for i, col in enumerate(features):
     plt.subplot((len(features) // 3) + 1, 3, i + 1)  # Dinamik grid ayarlaması
